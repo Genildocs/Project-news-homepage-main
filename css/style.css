@@ -1,3 +1,13 @@
+:root {
+  --color-1: #5E607A;
+  --color-2: #00001A;
+  --color-3: #FFFDFA;
+  --color-4: #F15D51;
+  --color-5: #E9AA52;
+  --color-6: #C5C6CE;
+  --font-size-paragraph: 1.5rem;
+}
+
 *,
 ::after,
 ::before {
@@ -19,6 +29,44 @@ body {
   display: grid;
   grid-template-columns: minmax(1.7rem, 1fr) repeat(3, minmax(min-content, 38rem)) minmax(1.7rem, 1fr);
   grid-template-rows: 1fr 51rem 13rem;
+  grid-template-areas: ". head head head ." ". main main news ." ". top-3 top-3 top-3 ." ". foot foot foot .";
+}
+
+.footer {
+  grid-area: foot;
+}
+
+.header {
+  grid-area: head;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+.list__menu:not(:last-child) {
+  margin-right: 4rem;
+}
+.list__link {
+  text-decoration: none;
+  font-size: var(--font-size-paragraph);
+  line-height: 2.6rem;
+  color: var(--color-1);
+}
+
+.main {
+  grid-area: main;
+}
+
+.news {
+  grid-area: news;
+}
+
+.top-3 {
+  grid-area: top-3;
 }
 
 /*# sourceMappingURL=style.css.map */

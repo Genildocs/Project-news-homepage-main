@@ -1,0 +1,40 @@
+:root{
+  --color-1: #5E607A;
+  --color-2: #00001A;
+  --color-3: #FFFDFA;
+  --color-4: #F15D51;
+  --color-5: #E9AA52;
+  --color-6: #C5C6CE;
+  --font-size-paragraph: 1.5rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.container {  
+  display: grid;
+  grid-template-columns: minmax(1.7rem, 1fr) repeat(
+      3,
+      minmax(min-content, 38rem)
+    ) minmax(1.7rem, 1fr);
+  grid-template-rows: 1fr 51rem 13rem;
+  grid-template-areas:
+    ". head head head ."
+    ". main main news ."
+    ". top-3 top-3 top-3 ."
+    ". foot foot foot .";
+}

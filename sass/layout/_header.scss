@@ -1,0 +1,31 @@
+.header{
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+
+    &__menu{
+
+    }
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    
+    &__menu{
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: var(--font-size-paragraph);
+        line-height: 2.6rem;
+        color: var(--color-1);
+    }
+}
