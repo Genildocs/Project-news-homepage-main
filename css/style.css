@@ -7,6 +7,11 @@
   --color-6: #C5C6CE;
   --font-size-paragraph: 1.5rem;
 }
+@media (max-width: 560px) {
+  :root {
+    --font-size-paragraph: 1.2rem;
+  }
+}
 
 *,
 ::after,
@@ -23,6 +28,8 @@ html {
 body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
+  padding-top: 9rem;
+  position: relative;
 }
 
 .container {
@@ -41,6 +48,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5.5rem;
 }
 
 .list {
@@ -55,6 +63,51 @@ body {
   font-size: var(--font-size-paragraph);
   line-height: 2.6rem;
   color: var(--color-1);
+  transition: all 0.2s;
+  display: block;
+}
+@media (max-width: 500px) {
+  .list__link {
+    display: none;
+  }
+}
+.list__link:hover {
+  color: var(--color-3);
+  background-color: var(--color-4);
+  transform: rotate(5deg);
+}
+.list__link:active {
+  transform: rotate(5deg) scale(1.2);
+}
+
+.menu-toggle {
+  width: 6rem;
+  margin-left: 10rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .menu-toggle__one, .menu-toggle__two, .menu-toggle__three {
+    background: black;
+    height: 5px;
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+}
+
+.on {
+  transition: all 0.5s;
+}
+.on .menu-toggle__one {
+  margin-left: -1rem;
+  transform: rotate(45deg) translate(15px);
+}
+.on .menu-toggle__two {
+  opacity: 0;
+}
+.on .menu-toggle__three {
+  margin-left: -1rem;
+  transform: rotate(-45deg) translate(15px);
 }
 
 .main {
@@ -67,6 +120,15 @@ body {
 
 .top-3 {
   grid-area: top-3;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 10;
 }
 
 /*# sourceMappingURL=style.css.map */

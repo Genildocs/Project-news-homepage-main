@@ -6,6 +6,10 @@
   --color-5: #E9AA52;
   --color-6: #C5C6CE;
   --font-size-paragraph: 1.5rem;
+
+  @media(max-width:560px){
+    --font-size-paragraph: 1.2rem;
+  }
 }
 
 *,
@@ -23,6 +27,8 @@ html {
 body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
+  padding-top: 9rem;
+  position: relative;
 }
 
 .container {  
