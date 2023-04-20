@@ -21,3 +21,15 @@
     display: block;
     
 }
+
+.heading-1{
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    color: var(--color-2);
+
+    @media (max-width: 500px){
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 65%;
+    }
+}

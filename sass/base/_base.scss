@@ -6,10 +6,7 @@
   --color-5: #E9AA52;
   --color-6: #C5C6CE;
   --font-size-paragraph: 1.5rem;
-
-  @media(max-width:560px){
-    --font-size-paragraph: 1.2rem;
-  }
+  
 }
 
 *,
@@ -29,6 +26,10 @@ body {
   font-family: "Inter", sans-serif;
   padding-top: 9rem;
   position: relative;
+
+  @media(max-width:500px){
+    padding-top: 3rem;
+  }
 }
 
 .container {  
@@ -43,4 +44,15 @@ body {
     ". main main news ."
     ". top-3 top-3 top-3 ."
     ". foot foot foot .";
+
+  @media(max-width:500px){
+    grid-template-rows: 1fr;  
+    
+    grid-template-areas:
+    ". head head head ."
+    ". main main main ."
+    ". news news news ."
+    ". top-3 top-3 top-3 ."
+    " . foot foot foot .";
+  }
 }
