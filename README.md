@@ -2,7 +2,7 @@
 
 ## Welcome! 👋
 
-<i>Hello, this was my solution for the "News homepage" challenge. I used CSS grid in conjunction with flex-box for item alignment. I tried to use the "BEM" methodology for block organization and used the SASS preprocessor. Feedback and tips are welcome.</i>
+<i>Hello, this was my solution for the "News homepage" challenge. I used CSS grid in conjunction with flex-box for item alignment. I tried to use the "BEM" methodology for block organization and used the SASS preprocessor. Feedback and tips are welcome.Responsive menu was implemented using JavaScript.</i>
 <br>
 
 ### The challenge
