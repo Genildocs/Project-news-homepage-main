@@ -15,7 +15,7 @@
 
 ### My process
 
-<i>- Flexbox / CSS Grid / SASS</i><br>
+<i>- Flexbox / CSS Grid / SASS / JS</i><br>
 <i>- METHODOLOGY BEM</i><br>
 <i>- CSS custom properties</i>
 
