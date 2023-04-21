@@ -2,8 +2,7 @@
     grid-area: head;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5.5rem;
+    align-items: center;    
     
 }
 
@@ -62,6 +61,11 @@
         transition: all .3s;
         display: block;
 
+        @media (max-width: 600px) {
+            color: var(--color-2); 
+            font-size: 1.2rem;                    
+        }
+
         @media (max-width: 500px) {
             color: var(--color-2); 
             font-size: 1.6rem;                    
@@ -112,7 +116,7 @@
     transition: all 0.5s;
     position: absolute;
     top: 3.5rem;
-    right: 1.5rem;
+    right: 3.1rem;
     z-index: 200;
 
     .menu-toggle {

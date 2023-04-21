@@ -1,3 +1,71 @@
 .top-3{
     grid-area: top-3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));   
+    column-gap: 3rem; 
+
+    @media (max-width:780px){
+        row-gap: 3rem;
+    }
+}
+
+.cards{
+    display: flex;
+
+    &__img{
+        max-width: 10rem;
+        width: 100%;
+        margin-right: 2.4rem;
+        overflow: hidden;        
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: all .3s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__number{
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        color: var(--color-6);
+        margin-bottom: 1.2rem;
+    }
+
+    &__link{
+        text-decoration: none;
+    }
+
+    &__title{
+        margin-bottom: 1rem;
+        font-weight: 800;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: var(--color-2);
+        transition: color .3s;
+
+        &:hover{
+            color: var(--color-4);
+        }
+
+        &:active{
+            color: var(--color-2);
+        }
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        color: var(--color-1);
+        
+    }
+
 }
