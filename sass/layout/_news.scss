@@ -1,3 +1,40 @@
 .news{
     grid-area: news;
+    background-color: var(--color-2);
+    padding: 3.2rem 2.4rem;
+
+    &__title{
+        font-size:4rem;
+        line-height: 4rem;
+        color:var(--color-5);        
+    }
 }
+
+
+.link-news:not(:last-child){
+    border-bottom: 1px solid var(--color-1);
+}
+.link-news{   
+    a{
+        text-decoration: none;
+    }
+
+    &__title{
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+        color: var(--color-3);
+        transition: all .3s;
+        margin-top: 3.4rem;
+        &:hover{
+            color: var(--color-5);
+        }       
+    }
+
+    &__paragraph{
+        font-size:var(--font-size-paragraph);
+        color: var(--color-6);            
+    }
+}
+
